@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video.js YouTube Player</title>
+  <!-- Video.js CSS -->
+  <link href="https://vjs.zencdn.net/7.21.0/video-js.css" rel="stylesheet" />
+  <!-- Video.js YouTube plugin CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/videojs-youtube.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Video.js Player -->
+  <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="560" height="315"
+    data-setup='{}'>
+    <source src="https://www.youtube.com/embed/5VWjKfPKx9Q?si=4zU84GvUeVZVubZx" type="video/youtube" />
+  </video>
+  <!-- Video.js JS -->
+  <script src="https://vjs.zencdn.net/7.21.0/video.min.js"></script>
+  <!-- Video.js YouTube plugin JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/videojs-youtube.min.js"></script>
+  <script>
+    // Initialize the Video.js player
+    var player = videojs('my-video');
+  </script>
+</body>
+</html>
